@@ -33,9 +33,6 @@
     <script>
       ScrollReveal({ reset: false });
     </script>
-
-    <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
@@ -64,7 +61,7 @@
           <div class="col-md-4 col-sm-12">
             <img class="img-fluid rounded" src="assets/logo.png" alt="will.i.code logo">
           </div>
-          <div class="col-md-8 col-sm-12 my-auto">
+          <div class="col-md-7 col-sm-12 offset-md-1 my-auto">
             <h1 class="hero-title load-hidden">
               Hello, I am <span class="text-color-main">Willard Aronow</span>
             </h1>
@@ -101,24 +98,45 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you can!
-              </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href=""
-                >
-                  View Resume
-                </a>
-              </span>
+            <p>
+              <button class="btn btn-primary col-3" type="button" data-bs-toggle="collapse" data-bs-target="#business" aria-expanded="false" aria-controls="business">Business</button>
+              <button class="btn btn-primary col-3" type="button" data-bs-toggle="collapse" data-bs-target="#personal" aria-expanded="false" aria-controls="personal">Personal</button>
+              <button class="btn btn-primary col-3" type="button" data-bs-toggle="collapse" data-bs-target="#links" aria-expanded="false" aria-controls="links">Links</button>
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="business">
+                  <div class="card card-body">
+                    After many years of using frustrating software or a generall lack of, at various jobs I decided the only way to fix it was to learn to learn code.I am a full-stack javascript developer versed in Vue, React and vanilla javascript to build you an easy to use product that will satisfy both you and your customers.  No matter if you need a website, web or mobile app, or maybe something just to use on your desktop.  Let's make it happen.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="personal">
+                  <div class="card card-body">
+                    In my spare time I enjoy working on cars, just got a 8th Gen Civic SI to work on.  As well as tinker with various electronics repairing them or just finding out how they work.  I repair many computers, phones, and other things for people as well.  Another passion of mine is my dog, a Boston Terrier,named Bebe, my family breeds Boston's and they are such fun dogs with great personalities.
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="links">
+                  <div class="card card-body">
+                    <a rel="noreferrer" href="https://twitter.com/will_i_code" target="_blank">
+                      <i class="fa fa-twitter fa-inverse"></i>
+                    </a>
+                    <a rel="noreferrer" href="https://www.linkedin.com/in/willard-john-aronow-380bb378/" target="_blank">
+                      <i class="fa fa-linkedin fa-inverse"></i>
+                    </a>
+                    <a rel="noreferrer" href="https://github.com/will-i-code420" target="_blank">
+                      <i class="fa fa-github fa-inverse"></i>
+                    </a>
+                    <a rel="noreferrer" target="_blank" class="btn btn-primary cta-btn--resume" href="">
+                      View Resume
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -281,20 +299,22 @@
     <!-- /END Projects Section -->
 
     <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
+    <section id="contact" class="container">
         <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
-        </div>
-      </div>
+        <form class="contact-wrapper col-md-6 col-xl-8 offset-md-3 offset-xl-2">
+          <p class="contact-wrapper__text">
+            <label for="name" class="form-label text-start">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="John Doe" required>
+          </p>
+          <p class="contact-wrapper__text">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" type="email" class="form-control" placeholder="yourname@gmail.com" required>
+          </p>
+          <p class="contact-wrapper__text">
+            <label for="info" class="form-label">Info</label>
+            <textarea name="info" id="info" class="form-control" cols="30" rows="10" placeholder="What are you interested in?"></textarea>
+          </p>
+        </form>
     </section>
     <!-- /END Contact Section -->
 
@@ -323,30 +343,6 @@
           © 2021 - Template developed by
           <a rel="noreferrer" href="https://github.com/cobidev" target="_blank"
             >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/will-i-code420/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork will-i-code420/simplefolio on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/will-i-code420/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star will-i-code420/simplefolio on GitHub"
-            >Star</a
           >
         </p>
       </div>
